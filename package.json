@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
-    "ember-lodash": "4.17.4"
+    "ember-lodash": "^4.17.4"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
