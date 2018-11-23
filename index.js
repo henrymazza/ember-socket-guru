@@ -39,7 +39,7 @@ module.exports = {
   treeForAddon() {
     const addonTree = this._super.treeForAddon.apply(this, arguments);
     const transpiled = new BabelTranspiler('vendor', {
-      loose: true,
+      // loose: true,
       blacklist: ['es6.modules'],
     });
     const phoenixVendorTree = new Funnel(transpiled, {
@@ -61,7 +61,7 @@ module.exports = {
   treeForVendor() {
     const vendorTree = this._super.treeForVendor.apply(this, arguments);
     const transpiled = new BabelTranspiler(vendorTree, {
-      loose: true,
+      // loose: true,
       modules: 'amdStrict',
       moduleIds: true,
     });
